@@ -5,7 +5,9 @@ This is a demo site that displays pages from both **WordPress posts** and **MDX 
 ## 🛠️ Features
 
 - **Unified Search:** Search across WordPress posts and MDX documentation.
+
 - **Headless Architecture:** Utilizes Next.js 15 App Router for a modern, scalable frontend.
+
 - **Powerful Search Backend:** Integrates with WP Engine's Smart Search Plugin and WPGraphQL for search capabilities.
 
 ## 📋 Requirements
@@ -14,19 +16,21 @@ Before setting up the project, ensure you have the following:
 
 1. **WP Engine Account with Smart Search:**
 
-   - Sign up for a [WP Engine](https://wpengine.com/) account.
-   - Ensure the **Smart Search Plugin** is enabled on your WordPress installation.
+- Sign up for a [WP Engine](https://wpengine.com/) account.
+
+- Ensure the **Smart Search Plugin** is enabled on your WordPress installation.
 
 2. **WPGraphQL Plugin:**
 
-   - Install and activate the [WPGraphQL](https://www.wpgraphql.com/) plugin on your WordPress site to provide a GraphQL API.
+- Install and activate the [WPGraphQL](https://www.wpgraphql.com/) plugin on your WordPress site to provide a GraphQL API.
 
 3. **WordPress Installation:**
 
-   - A running WordPress site with posts and MDX pages (docs) that you want to include in the search.
+- A running WordPress site with posts and MDX pages (docs) that you want to include in the search.
 
 4. **Environment Variables:**
-   - You'll need to configure specific environment variables to connect your Next.js application with WordPress and WP Engine's Smart Search.
+
+- You'll need to configure specific environment variables to connect your Next.js application with WordPress and WP Engine's Smart Search.
 
 ## 🚀 Installation
 
@@ -34,23 +38,32 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/smart-search-headless-wp-demo.git
-   cd smart-search-headless-wp-demo
-   ```
+```bash
+
+git clone https://github.com/yourusername/smart-search-headless-wp-demo.git
+
+cd smart-search-headless-wp-demo
+
+```
 
 Install Dependencies:
 
 Ensure you have Node.js installed. Then, install the necessary packages:
+
 `npm install`
 
 Create a .env.local file in the root directory of the project and add the following variables:
 
-```bash
+```
+
 NEXT_PUBLIC_GRAPHQL_ENDPOINT=your_graphql_endpoint
+
 NEXT_PUBLIC_WORDPRESS_HOSTNAME=your_wordpress_hostname
+
 NEXT_PUBLIC_SEARCH_ENDPOINT=your_search_endpoint
+
 NEXT_SEARCH_ACCESS_TOKEN=your_search_access_token
+
 ```
 
 NEXT_PUBLIC_GRAPHQL_ENDPOINT: The GraphQL endpoint provided by WPGraphQL (e.g., https://your-site.com/graphql).
