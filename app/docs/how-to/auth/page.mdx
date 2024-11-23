@@ -1,0 +1,35 @@
+export const metadata = {
+  title: "Authentication",
+  date: "2023-10-30",
+};
+
+# Authentication
+
+Authentication is a key part of many web applications today. It's how a system checks if the user is who they say they are.
+
+A secure website often uses multiple ways to check a user's identity. For instance, after entering your username and password, the site may send a verification code to your device or use an external app like Google Authenticator. This 2-factor authentication (2FA) helps increase security. Even if someone learns your password, they can't access your account without your unique token.
+
+- Point one
+- Point two
+
+Here is some code:
+
+```js
+import AcmeLogo from "@/app/ui/acme-logo";
+import LoginForm from "@/app/ui/login-form";
+
+export default function LoginPage() {
+  return (
+    <main className="flex items-center justify-center md:h-screen">
+      <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
+        <div className="flex h-20 w-full items-end rounded-lg bg-blue-500 p-3 md:h-36">
+          <div className="w-32 text-white md:w-36">
+            <AcmeLogo />
+          </div>
+        </div>
+        <LoginForm />
+      </div>
+    </main>
+  );
+}
+```
