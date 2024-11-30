@@ -1,6 +1,5 @@
 "use client";
 
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useCombobox } from "downshift";
 import debounce from "lodash.debounce";
 import { useRouter } from "next/navigation";
@@ -130,8 +129,6 @@ export default function SearchBar() {
         onClick={openModal}
         type="button"
       >
-        <span className="sr-only md:hidden">Open search</span>
-        <MagnifyingGlassIcon className="h-6 w-6 text-gray-400 md:hidden" />
         <span className="hidden md:inline">
           <span className="pl-3">Search docs or posts...</span>
           <kbd className="ml-8 rounded bg-gray-700 px-2 py-1 text-gray-400">

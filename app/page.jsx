@@ -7,7 +7,6 @@ export default function Home() {
       <h1 className="text-5xl font-bold mb-8">
         Smart Search Headless WP Demo in App Router
       </h1>
-      <SearchBar />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-// next.config.mjs
-
 import { env } from "node:process";
 import createMDX from "@next/mdx";
 import { transformerNotationDiff } from "@shikijs/transformers";
@@ -22,20 +20,12 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  redirects() {
-    return [
-      {
-        source: "/discord",
-        destination: "https://discord.gg/headless-wordpress-836253505944813629",
-        permanent: false,
-      },
-    ];
-  },
+
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: process.env.NEXT_PUBLIC_WORDPRESS_HOSTNAME, // Updated hostname
+        hostname: process.env.NEXT_PUBLIC_WORDPRESS_HOSTNAME,
         pathname: "/**",
       },
     ],
@@ -70,7 +60,6 @@ const nextConfig = {
 
 const withMDX = createMDX({
   options: {
-    // Add any remark plugins if needed
     rehypePlugins: [
       rehypeMdxImportMedia,
       rehypeSlug,

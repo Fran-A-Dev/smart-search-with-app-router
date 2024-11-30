@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import Loading from "../../loading";
-
+import SearchBar from "@/components/search-bar";
 // Utility function to fetch the post based on the URI
 async function getPost(uri) {
   const query = `
@@ -67,16 +67,16 @@ export default async function PostDetails({ params }) {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 flex flex-col items-center py-12">
+    <main className="min-h-screen bg-#000a2a text-white flex flex-col items-center py-12 relative">
       <nav className="w-full">
-        <h1 className="text-center text-4xl font-bold text-gray-900 mb-8">
+        <h1 className="text-center text-4xl font-bold text-white mb-8">
           {post.title}
         </h1>
       </nav>
       <Suspense fallback={<Loading />}>
         <div
           key={post.uri} // Ensure `uri` is included in the post object
-          className="prose prose-lg mx-auto max-w-3xl text-gray-700 leading-7 px-6"
+          className="prose prose-lg mx-auto max-w-3xl text-white leading-7 px-6"
         >
           {/* Render the post content safely */}
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
