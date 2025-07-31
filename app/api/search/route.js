@@ -81,9 +81,9 @@ async function searchMdxFiles(query) {
 }
 
 export async function GET(request) {
-  const endpoint = process.env.NEXT_PUBLIC_SEARCH_ENDPOINT;
-  const accessToken = process.env.NEXT_SEARCH_ACCESS_TOKEN;
-  const wpEndpoint = process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT;
+  const endpoint = process.env.NEXT_PUBLIC_SMART_SEARCH_URL;
+  const accessToken = process.env.NEXT_PUBLIC_SMART_SEARCH_ACCESS_TOKEN;
+  const wpEndpoint = process.env.NEXT_PUBLIC_WORDPRESS_GRAPHQL_ENDPOINT;
 
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("query");

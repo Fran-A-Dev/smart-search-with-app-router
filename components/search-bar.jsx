@@ -130,7 +130,7 @@ export default function SearchBar() {
         type="button"
       >
         <span className="hidden md:inline">
-          <span className="pl-3">Search docs or posts...</span>
+          <span className="pl-3">Search for content...</span>
           <kbd className="ml-8 rounded bg-gray-700 px-2 py-1 text-gray-400">
             ⌘K
           </kbd>
