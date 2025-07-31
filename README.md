@@ -139,6 +139,24 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## 🔧 Configuration Details
 
+### Customizing Site Information
+
+**Site Title (Browser Tab):**
+To change the title that appears in browser tabs, edit the `metadata` object in `app/layout.jsx`:
+
+```javascript
+export const metadata = {
+  title: "Your Site Title Here", // This appears in browser tabs
+  description: "Your site description",
+};
+```
+
+**Site Branding:**
+
+- Update the footer text in `app/layout.jsx`
+- Modify navigation branding in `components/nav-bar.jsx`
+- Customize SEO metadata in individual page components
+
 ### Environment Variables Explained
 
 | Variable                                 | Description                             | Example                                   |

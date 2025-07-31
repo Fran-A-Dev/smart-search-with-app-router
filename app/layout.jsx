@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Fran's Smart Search App Router Demo",
+  title: "Fran's Media Site Demo with Smart Search",
   description: "Headless WP with Smart Search",
 };
 
